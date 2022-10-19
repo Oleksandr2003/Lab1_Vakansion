@@ -13,8 +13,9 @@ namespace Vakansion.Core
         public int ClassId { get; set; }
         public string? ClassName { get; set; }
         public int DataId { get; set; }
-        public virtual ICollection<Data>? Datas { get; set; }
+        public Data? Datas { get; set; }
         public int EducationId { get; set; }
-        public virtual ICollection<Education>? Educations { get; set; }
+        public Education? Educations { get; set; }
+        public virtual ICollection<Vacancys>? Vacancies { get; set; }
     }
 }

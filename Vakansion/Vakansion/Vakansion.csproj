@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Vacancy.Repository\Vacancy.Repository.csproj" />
     <ProjectReference Include="..\Vakansion.Core\Vakansion.Core.csproj" />
   </ItemGroup>
 

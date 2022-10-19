@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Vakansion.Core;
 
@@ -11,9 +12,10 @@ using Vakansion.Core;
 namespace Vakansion.Core.Migrations
 {
     [DbContext(typeof(VacancyContext))]
-    partial class VacancyContextModelSnapshot : ModelSnapshot
+    [Migration("20221019174844_Firsts")]
+    partial class Firsts
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

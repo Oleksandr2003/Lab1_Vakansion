@@ -1,10 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Vakansion.Core
 {
@@ -19,7 +14,7 @@ namespace Vakansion.Core
             builder.Seed();
             base.OnModelCreating(builder);
         }
-        public DbSet<Vacancy> Vacancys { get; set; }
+        public DbSet<Vacancys> Vacancyses { get; set; }
         public DbSet<Education> Educations { get; set; }
         public DbSet<Data> Datas { get; set; }
         public DbSet<Unemployed> Unemployeds { get; set; }

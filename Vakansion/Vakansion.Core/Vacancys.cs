@@ -8,19 +8,19 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Vakansion.Core
 {
-    public class Vacancy
+    public class Vacancys
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int VacancyId { get; set; }
+        public int VacancysId { get; set; }
 
         public int PositionId { get; set; }
-        public virtual ICollection<Position>? Positions { get; set; }
+        public Position? Positions { get; set; }
 
         public int EmployerId { get; set; }
-        public virtual ICollection<Employer>? Employers { get; set; }
+        public Employer? Employers { get; set; }
 
         public int UnemployedId { get; set; }
-        public virtual ICollection<Unemployed>? Unemployeds { get; set; }
+        public Unemployed? Unemployeds { get; set; }
     }
 }
