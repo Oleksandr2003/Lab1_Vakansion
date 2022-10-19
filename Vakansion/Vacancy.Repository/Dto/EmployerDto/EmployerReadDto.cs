@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.ComponentModel.DataAnnotations;
+using Vakansion.Core;
 
-namespace Vakansion.Core
+namespace Vacancy.Repository.Dto.EmployerDto
 {
-    public class Employer
+    public class EmployerReadDto
     {
-        [Key]
         public int ClassId { get; set; }
         public string? ClassName { get; set; }
 

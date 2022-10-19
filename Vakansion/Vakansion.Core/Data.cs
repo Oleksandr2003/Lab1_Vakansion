@@ -12,5 +12,9 @@ namespace Vakansion.Core
         [Key]
         public int ClassId { get; set; }
         public string? ClassName { get; set; }
+
+        public Unemployed? Unemployeds { get; set; }
+
+        public virtual ICollection<Vacancys>? Vacancies { get; set; }
     }
 }
