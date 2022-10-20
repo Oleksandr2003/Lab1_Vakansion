@@ -12,8 +12,8 @@ using Vakansion.Core;
 namespace Vakansion.Core.Migrations
 {
     [DbContext(typeof(VacancyContext))]
-    [Migration("20221020125952_Firstuser")]
-    partial class Firstuser
+    [Migration("20221020160057_First")]
+    partial class First
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -53,15 +53,15 @@ namespace Vakansion.Core.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "742b9e6a-946d-400c-ad13-d47e6a35a0fd",
-                            ConcurrencyStamp = "b0e37c80-39d5-4030-bf9b-20fe36b36c7d",
+                            Id = "0afe914a-52e3-46f0-a049-3d0071a0b656",
+                            ConcurrencyStamp = "6ebaa118-4668-4278-9440-c19c641badb5",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "7e8c7954-58ce-4fe2-ad77-ddaff9c97d5e",
-                            ConcurrencyStamp = "d0fb06c7-87ba-4ff4-b46e-d7536569a0fa",
+                            Id = "5c064ad0-413e-433c-871d-ae492b8d4648",
+                            ConcurrencyStamp = "96382874-482b-4df4-b7fc-c532cc4adf2c",
                             Name = "User",
                             NormalizedName = "USER"
                         });
@@ -158,18 +158,18 @@ namespace Vakansion.Core.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "2db26ba6-a036-437d-b946-72e8888ab53e",
-                            RoleId = "742b9e6a-946d-400c-ad13-d47e6a35a0fd"
+                            UserId = "5787bd20-bdc8-4874-a8d4-bea65bb991e2",
+                            RoleId = "0afe914a-52e3-46f0-a049-3d0071a0b656"
                         },
                         new
                         {
-                            UserId = "e5c042c4-e785-4408-a607-86d0953b7588",
-                            RoleId = "742b9e6a-946d-400c-ad13-d47e6a35a0fd"
+                            UserId = "1e6e032d-c256-47fe-81cb-7d6fd8504e2a",
+                            RoleId = "0afe914a-52e3-46f0-a049-3d0071a0b656"
                         },
                         new
                         {
-                            UserId = "e5c042c4-e785-4408-a607-86d0953b7588",
-                            RoleId = "7e8c7954-58ce-4fe2-ad77-ddaff9c97d5e"
+                            UserId = "1e6e032d-c256-47fe-81cb-7d6fd8504e2a",
+                            RoleId = "5c064ad0-413e-433c-871d-ae492b8d4648"
                         });
                 });
 
@@ -359,33 +359,33 @@ namespace Vakansion.Core.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "2db26ba6-a036-437d-b946-72e8888ab53e",
+                            Id = "5787bd20-bdc8-4874-a8d4-bea65bb991e2",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "69a4fec9-2c68-48dd-9b77-bdd02c87db55",
+                            ConcurrencyStamp = "3f17418a-7ccc-47cc-a6bc-7b07e1d58148",
                             Email = "admin@vacansyukraine.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@VACANSYUKRAINE.COM",
                             NormalizedUserName = "ADMIN@VACANSYUKRAINE.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEKsA4q8KKO/A6O4eBc2NAVc6K/lnpcSURkdAtQ7/bnFGDOQuCqroe4Uh7FMu/hcu0g==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEDtZFXy4ipomnXaImYyYA4W46qggm95TPS6kI3YhlzYp+48APUPLdqf9QEx3iFFFCw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "bd1be8bb-8d57-4ae9-8811-ed2e62ee977d",
+                            SecurityStamp = "45148f66-cd7e-4dea-9767-66ebfb35d7b2",
                             TwoFactorEnabled = false,
                             UserName = "admin@vacansyukraine.com"
                         },
                         new
                         {
-                            Id = "e5c042c4-e785-4408-a607-86d0953b7588",
+                            Id = "1e6e032d-c256-47fe-81cb-7d6fd8504e2a",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "a1728fc7-707f-4aa3-991e-b9332c91303e",
+                            ConcurrencyStamp = "e571faee-dafa-4c1f-9146-64de2f30a6e7",
                             Email = "user@vacansyukraine.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "USER@VACANSYUKRAINE.COM",
                             NormalizedUserName = "USER@VACANSYUKRAINE.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEEWdmI/zk2sPiDZ4YvEyXb/z9XueU5Rk9g3BeyQDGXUXzKad1pYEuCBrwzYrGhaGjw==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEO1xedQOtegZSx6aWk3SIVysZWqXrhtVdNFUegM9OjFKF7TMPi+GOTF9SI+i7wverw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "c810d04f-8305-4ae5-9c5b-58d0f1b679ad",
+                            SecurityStamp = "b97ce857-39df-4590-97cd-185d3e92aa70",
                             TwoFactorEnabled = false,
                             UserName = "user@vacansyukraine.com"
                         });
