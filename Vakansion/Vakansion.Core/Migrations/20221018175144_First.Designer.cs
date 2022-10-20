@@ -12,8 +12,13 @@ using Vakansion.Core;
 namespace Vakansion.Core.Migrations
 {
     [DbContext(typeof(VacancyContext))]
-    [Migration("20221017163842_First")]
+<<<<<<< Updated upstream:Vakansion/Vakansion.Core/Migrations/20221020121345_Name.Designer.cs
+    [Migration("20221020121345_Name")]
+    partial class Name
+=======
+    [Migration("20221018175144_First")]
     partial class First
+>>>>>>> Stashed changes:Vakansion/Vakansion.Core/Migrations/20221018175144_First.Designer.cs
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -53,15 +58,25 @@ namespace Vakansion.Core.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "bfa31fb9-7b11-4f2b-b710-0e7243443fbf",
-                            ConcurrencyStamp = "8b617f60-e2a8-4e9d-a980-2dd07903b154",
+<<<<<<< Updated upstream:Vakansion/Vakansion.Core/Migrations/20221020121345_Name.Designer.cs
+                            Id = "706a77ed-bb8b-47a1-9a80-a06931d02e49",
+                            ConcurrencyStamp = "7a68ce91-efce-4044-963e-d3910100f1e5",
+=======
+                            Id = "4a125544-5ac0-4927-a181-b7ef3547562a",
+                            ConcurrencyStamp = "0a01f496-738a-4781-9dfc-eec1f23de4cd",
+>>>>>>> Stashed changes:Vakansion/Vakansion.Core/Migrations/20221018175144_First.Designer.cs
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "80d9bb10-67b5-4b48-9500-c6d7c71bede4",
-                            ConcurrencyStamp = "23de16ae-1288-43c2-9e27-84c42d8d12a6",
+<<<<<<< Updated upstream:Vakansion/Vakansion.Core/Migrations/20221020121345_Name.Designer.cs
+                            Id = "cc2c8e5a-0ef5-4397-be24-f62194674072",
+                            ConcurrencyStamp = "b0c5b333-52cc-4c21-884d-1f32fd66ace8",
+=======
+                            Id = "705ba428-5f5e-4ae3-b884-504cf3a3a4e1",
+                            ConcurrencyStamp = "f0f3f692-fe58-4c52-804e-322f1b0e90a7",
+>>>>>>> Stashed changes:Vakansion/Vakansion.Core/Migrations/20221018175144_First.Designer.cs
                             Name = "User",
                             NormalizedName = "USER"
                         });
@@ -158,18 +173,33 @@ namespace Vakansion.Core.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "962ca386-78fa-4c52-a694-df60fc4cd2d0",
-                            RoleId = "bfa31fb9-7b11-4f2b-b710-0e7243443fbf"
+<<<<<<< Updated upstream:Vakansion/Vakansion.Core/Migrations/20221020121345_Name.Designer.cs
+                            UserId = "88c575fc-5f94-49ff-acb2-9fcc9402d481",
+                            RoleId = "706a77ed-bb8b-47a1-9a80-a06931d02e49"
                         },
                         new
                         {
-                            UserId = "1c5ea35f-361a-45d7-8a77-71a2a359f679",
-                            RoleId = "bfa31fb9-7b11-4f2b-b710-0e7243443fbf"
+                            UserId = "523a7c7f-773b-4f91-b6ca-ddd3f6ad1e92",
+                            RoleId = "706a77ed-bb8b-47a1-9a80-a06931d02e49"
                         },
                         new
                         {
-                            UserId = "1c5ea35f-361a-45d7-8a77-71a2a359f679",
-                            RoleId = "80d9bb10-67b5-4b48-9500-c6d7c71bede4"
+                            UserId = "523a7c7f-773b-4f91-b6ca-ddd3f6ad1e92",
+                            RoleId = "cc2c8e5a-0ef5-4397-be24-f62194674072"
+=======
+                            UserId = "76b3fb1f-1201-452e-b1bb-d0d1aac44cad",
+                            RoleId = "4a125544-5ac0-4927-a181-b7ef3547562a"
+                        },
+                        new
+                        {
+                            UserId = "be7003a7-d841-46d4-adfb-92db7ed1ae39",
+                            RoleId = "4a125544-5ac0-4927-a181-b7ef3547562a"
+                        },
+                        new
+                        {
+                            UserId = "be7003a7-d841-46d4-adfb-92db7ed1ae39",
+                            RoleId = "705ba428-5f5e-4ae3-b884-504cf3a3a4e1"
+>>>>>>> Stashed changes:Vakansion/Vakansion.Core/Migrations/20221018175144_First.Designer.cs
                         });
                 });
 
@@ -205,12 +235,7 @@ namespace Vakansion.Core.Migrations
                     b.Property<string>("ClassName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("UnemployedClassId")
-                        .HasColumnType("int");
-
                     b.HasKey("ClassId");
-
-                    b.HasIndex("UnemployedClassId");
 
                     b.ToTable("Datas");
                 });
@@ -226,12 +251,7 @@ namespace Vakansion.Core.Migrations
                     b.Property<string>("ClassName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("UnemployedClassId")
-                        .HasColumnType("int");
-
                     b.HasKey("ClassId");
-
-                    b.HasIndex("UnemployedClassId");
 
                     b.ToTable("Educations");
                 });
@@ -247,12 +267,7 @@ namespace Vakansion.Core.Migrations
                     b.Property<string>("ClassName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("VacancyId")
-                        .HasColumnType("int");
-
                     b.HasKey("ClassId");
-
-                    b.HasIndex("VacancyId");
 
                     b.ToTable("Employers");
                 });
@@ -268,12 +283,7 @@ namespace Vakansion.Core.Migrations
                     b.Property<string>("ClassName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("VacancyId")
-                        .HasColumnType("int");
-
                     b.HasKey("ClassId");
-
-                    b.HasIndex("VacancyId");
 
                     b.ToTable("Positions");
                 });
@@ -295,12 +305,13 @@ namespace Vakansion.Core.Migrations
                     b.Property<int>("EducationId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("VacancyId")
-                        .HasColumnType("int");
-
                     b.HasKey("ClassId");
 
-                    b.HasIndex("VacancyId");
+                    b.HasIndex("DataId")
+                        .IsUnique();
+
+                    b.HasIndex("EducationId")
+                        .IsUnique();
 
                     b.ToTable("Unemployeds");
                 });
@@ -378,45 +389,75 @@ namespace Vakansion.Core.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "962ca386-78fa-4c52-a694-df60fc4cd2d0",
+<<<<<<< Updated upstream:Vakansion/Vakansion.Core/Migrations/20221020121345_Name.Designer.cs
+                            Id = "88c575fc-5f94-49ff-acb2-9fcc9402d481",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "26f787fc-9316-4ec4-bfac-a1160ee096a6",
+                            ConcurrencyStamp = "e17bb092-b586-493f-8dc1-8b31a56b38eb",
+=======
+                            Id = "76b3fb1f-1201-452e-b1bb-d0d1aac44cad",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "c5205b5d-39eb-4618-9ccc-60d04e010bd5",
+>>>>>>> Stashed changes:Vakansion/Vakansion.Core/Migrations/20221018175144_First.Designer.cs
                             Email = "admin@vacansyukraine.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@VACANSYUKRAINE.COM",
                             NormalizedUserName = "ADMIN@VACANSYUKRAINE.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEJBeXzF3EHoZCFv99WbDDHccAO4XFMalaHMcv9Qn33+vnvt6i5Oh4tvCkUlcau0VhA==",
+<<<<<<< Updated upstream:Vakansion/Vakansion.Core/Migrations/20221020121345_Name.Designer.cs
+                            PasswordHash = "AQAAAAEAACcQAAAAEEX0TIFbt3IrXQndzFNtFatcpfdRMA86jd/qXPaeCnUGFILRsBKtkoN31QsphEcgFA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "faa38e43-967b-462f-9ef2-e9720064b62a",
+                            SecurityStamp = "497ef9be-d226-4a8f-9806-d19fc609eb0d",
+=======
+                            PasswordHash = "AQAAAAEAACcQAAAAEE3N2Re+5dQc4tr6rworgNjEFEsa5RCPTjiJMvSbWGuEYRiwfZ1Ed16YHOnIkDHewQ==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "22754281-a0a9-4896-a64f-a58ba77a5410",
+>>>>>>> Stashed changes:Vakansion/Vakansion.Core/Migrations/20221018175144_First.Designer.cs
                             TwoFactorEnabled = false,
                             UserName = "admin@vacansyukraine.com"
                         },
                         new
                         {
-                            Id = "1c5ea35f-361a-45d7-8a77-71a2a359f679",
+<<<<<<< Updated upstream:Vakansion/Vakansion.Core/Migrations/20221020121345_Name.Designer.cs
+                            Id = "523a7c7f-773b-4f91-b6ca-ddd3f6ad1e92",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "8c069f7b-575e-4da5-9da0-5e6bffe98b41",
+                            ConcurrencyStamp = "7cb0c9b4-9345-4b57-a6d9-10be97ca0fd3",
+=======
+                            Id = "be7003a7-d841-46d4-adfb-92db7ed1ae39",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "0dc5df06-3f9f-4d96-9c37-0270ea66f9f3",
+>>>>>>> Stashed changes:Vakansion/Vakansion.Core/Migrations/20221018175144_First.Designer.cs
                             Email = "user@vacansyukraine.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "USER@VACANSYUKRAINE.COM",
                             NormalizedUserName = "USER@VACANSYUKRAINE.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEOkbXyQQ1wdQIA//a5h7pD4AYM06wcceGkQpNx4z4Up/DFYy5I3+JF19f+RbgpCWdQ==",
+<<<<<<< Updated upstream:Vakansion/Vakansion.Core/Migrations/20221020121345_Name.Designer.cs
+                            PasswordHash = "AQAAAAEAACcQAAAAECyWYP+qwdHUY+hLxb/ilyuLtAw+Hd422ogoMkDnPVMuczUHmJE4+CUhBvFVb2WEzQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "c5f52490-8e51-4f40-85fe-1e823680a95f",
+                            SecurityStamp = "e3829778-303c-4308-a595-f63f337d73b8",
+=======
+                            PasswordHash = "AQAAAAEAACcQAAAAEKsLm+LPJfP1sOuJ1mbke4qJWfSSBksIGxTS5ZMwXiFKGjB9Ix/POCOnXDoxmIGLoA==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "0cf71d8a-621b-4fd1-a9fd-8ec18391e9d5",
+>>>>>>> Stashed changes:Vakansion/Vakansion.Core/Migrations/20221018175144_First.Designer.cs
                             TwoFactorEnabled = false,
                             UserName = "user@vacansyukraine.com"
                         });
                 });
 
-            modelBuilder.Entity("Vakansion.Core.Vacancy", b =>
+            modelBuilder.Entity("Vakansion.Core.Vacancys", b =>
                 {
-                    b.Property<int>("VacancyId")
+                    b.Property<int>("VacancysId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("VacancyId"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("VacancysId"), 1L, 1);
+
+                    b.Property<int?>("DataClassId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("EducationClassId")
+                        .HasColumnType("int");
 
                     b.Property<int>("EmployerId")
                         .HasColumnType("int");
@@ -427,9 +468,19 @@ namespace Vakansion.Core.Migrations
                     b.Property<int>("UnemployedId")
                         .HasColumnType("int");
 
-                    b.HasKey("VacancyId");
+                    b.HasKey("VacancysId");
 
-                    b.ToTable("Vacancys");
+                    b.HasIndex("DataClassId");
+
+                    b.HasIndex("EducationClassId");
+
+                    b.HasIndex("EmployerId");
+
+                    b.HasIndex("PositionId");
+
+                    b.HasIndex("UnemployedId");
+
+                    b.ToTable("Vacancyses");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -483,55 +534,87 @@ namespace Vakansion.Core.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Vakansion.Core.Data", b =>
-                {
-                    b.HasOne("Vakansion.Core.Unemployed", null)
-                        .WithMany("Datas")
-                        .HasForeignKey("UnemployedClassId");
-                });
-
-            modelBuilder.Entity("Vakansion.Core.Education", b =>
-                {
-                    b.HasOne("Vakansion.Core.Unemployed", null)
-                        .WithMany("Educations")
-                        .HasForeignKey("UnemployedClassId");
-                });
-
-            modelBuilder.Entity("Vakansion.Core.Employer", b =>
-                {
-                    b.HasOne("Vakansion.Core.Vacancy", null)
-                        .WithMany("Employers")
-                        .HasForeignKey("VacancyId");
-                });
-
-            modelBuilder.Entity("Vakansion.Core.Position", b =>
-                {
-                    b.HasOne("Vakansion.Core.Vacancy", null)
-                        .WithMany("Positions")
-                        .HasForeignKey("VacancyId");
-                });
-
             modelBuilder.Entity("Vakansion.Core.Unemployed", b =>
                 {
-                    b.HasOne("Vakansion.Core.Vacancy", null)
-                        .WithMany("Unemployeds")
-                        .HasForeignKey("VacancyId");
-                });
+                    b.HasOne("Vakansion.Core.Data", "Datas")
+                        .WithOne("Unemployeds")
+                        .HasForeignKey("Vakansion.Core.Unemployed", "DataId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-            modelBuilder.Entity("Vakansion.Core.Unemployed", b =>
-                {
+                    b.HasOne("Vakansion.Core.Education", "Educations")
+                        .WithOne("Unemployeds")
+                        .HasForeignKey("Vakansion.Core.Unemployed", "EducationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Datas");
 
                     b.Navigation("Educations");
                 });
 
-            modelBuilder.Entity("Vakansion.Core.Vacancy", b =>
+            modelBuilder.Entity("Vakansion.Core.Vacancys", b =>
                 {
+                    b.HasOne("Vakansion.Core.Data", null)
+                        .WithMany("Vacancies")
+                        .HasForeignKey("DataClassId");
+
+                    b.HasOne("Vakansion.Core.Education", null)
+                        .WithMany("Vacancies")
+                        .HasForeignKey("EducationClassId");
+
+                    b.HasOne("Vakansion.Core.Employer", "Employers")
+                        .WithMany("Vacancies")
+                        .HasForeignKey("EmployerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Vakansion.Core.Position", "Positions")
+                        .WithMany("Vacancies")
+                        .HasForeignKey("PositionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Vakansion.Core.Unemployed", "Unemployeds")
+                        .WithMany("Vacancies")
+                        .HasForeignKey("UnemployedId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Employers");
 
                     b.Navigation("Positions");
 
                     b.Navigation("Unemployeds");
+                });
+
+            modelBuilder.Entity("Vakansion.Core.Data", b =>
+                {
+                    b.Navigation("Unemployeds");
+
+                    b.Navigation("Vacancies");
+                });
+
+            modelBuilder.Entity("Vakansion.Core.Education", b =>
+                {
+                    b.Navigation("Unemployeds");
+
+                    b.Navigation("Vacancies");
+                });
+
+            modelBuilder.Entity("Vakansion.Core.Employer", b =>
+                {
+                    b.Navigation("Vacancies");
+                });
+
+            modelBuilder.Entity("Vakansion.Core.Position", b =>
+                {
+                    b.Navigation("Vacancies");
+                });
+
+            modelBuilder.Entity("Vakansion.Core.Unemployed", b =>
+                {
+                    b.Navigation("Vacancies");
                 });
 #pragma warning restore 612, 618
         }

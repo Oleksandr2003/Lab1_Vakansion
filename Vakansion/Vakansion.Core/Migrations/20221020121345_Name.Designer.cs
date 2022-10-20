@@ -12,8 +12,13 @@ using Vakansion.Core;
 namespace Vakansion.Core.Migrations
 {
     [DbContext(typeof(VacancyContext))]
-    [Migration("20221019174844_Firsts")]
-    partial class Firsts
+<<<<<<< Updated upstream:Vakansion/Vakansion.Core/Migrations/20221020121345_Name.Designer.cs
+    [Migration("20221020121345_Name")]
+    partial class Name
+=======
+    [Migration("20221018175144_First")]
+    partial class First
+>>>>>>> Stashed changes:Vakansion/Vakansion.Core/Migrations/20221018175144_First.Designer.cs
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -53,15 +58,25 @@ namespace Vakansion.Core.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "473c0403-d73e-4fc9-bcfc-dbd17b9943e6",
-                            ConcurrencyStamp = "14ab7b62-0ca7-4127-bc22-68f64ec81242",
+<<<<<<< Updated upstream:Vakansion/Vakansion.Core/Migrations/20221020121345_Name.Designer.cs
+                            Id = "706a77ed-bb8b-47a1-9a80-a06931d02e49",
+                            ConcurrencyStamp = "7a68ce91-efce-4044-963e-d3910100f1e5",
+=======
+                            Id = "4a125544-5ac0-4927-a181-b7ef3547562a",
+                            ConcurrencyStamp = "0a01f496-738a-4781-9dfc-eec1f23de4cd",
+>>>>>>> Stashed changes:Vakansion/Vakansion.Core/Migrations/20221018175144_First.Designer.cs
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "20d374b1-7576-4d0e-a16a-1a2065074b31",
-                            ConcurrencyStamp = "6a1299b4-4c31-4721-a8f3-61bd8c3f549d",
+<<<<<<< Updated upstream:Vakansion/Vakansion.Core/Migrations/20221020121345_Name.Designer.cs
+                            Id = "cc2c8e5a-0ef5-4397-be24-f62194674072",
+                            ConcurrencyStamp = "b0c5b333-52cc-4c21-884d-1f32fd66ace8",
+=======
+                            Id = "705ba428-5f5e-4ae3-b884-504cf3a3a4e1",
+                            ConcurrencyStamp = "f0f3f692-fe58-4c52-804e-322f1b0e90a7",
+>>>>>>> Stashed changes:Vakansion/Vakansion.Core/Migrations/20221018175144_First.Designer.cs
                             Name = "User",
                             NormalizedName = "USER"
                         });
@@ -158,18 +173,33 @@ namespace Vakansion.Core.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "c20b7c03-733b-40af-8c6a-b1ef6bc93445",
-                            RoleId = "473c0403-d73e-4fc9-bcfc-dbd17b9943e6"
+<<<<<<< Updated upstream:Vakansion/Vakansion.Core/Migrations/20221020121345_Name.Designer.cs
+                            UserId = "88c575fc-5f94-49ff-acb2-9fcc9402d481",
+                            RoleId = "706a77ed-bb8b-47a1-9a80-a06931d02e49"
                         },
                         new
                         {
-                            UserId = "fe56737b-fc92-462e-bd47-97cfd3b1fc8e",
-                            RoleId = "473c0403-d73e-4fc9-bcfc-dbd17b9943e6"
+                            UserId = "523a7c7f-773b-4f91-b6ca-ddd3f6ad1e92",
+                            RoleId = "706a77ed-bb8b-47a1-9a80-a06931d02e49"
                         },
                         new
                         {
-                            UserId = "fe56737b-fc92-462e-bd47-97cfd3b1fc8e",
-                            RoleId = "20d374b1-7576-4d0e-a16a-1a2065074b31"
+                            UserId = "523a7c7f-773b-4f91-b6ca-ddd3f6ad1e92",
+                            RoleId = "cc2c8e5a-0ef5-4397-be24-f62194674072"
+=======
+                            UserId = "76b3fb1f-1201-452e-b1bb-d0d1aac44cad",
+                            RoleId = "4a125544-5ac0-4927-a181-b7ef3547562a"
+                        },
+                        new
+                        {
+                            UserId = "be7003a7-d841-46d4-adfb-92db7ed1ae39",
+                            RoleId = "4a125544-5ac0-4927-a181-b7ef3547562a"
+                        },
+                        new
+                        {
+                            UserId = "be7003a7-d841-46d4-adfb-92db7ed1ae39",
+                            RoleId = "705ba428-5f5e-4ae3-b884-504cf3a3a4e1"
+>>>>>>> Stashed changes:Vakansion/Vakansion.Core/Migrations/20221018175144_First.Designer.cs
                         });
                 });
 
@@ -359,33 +389,57 @@ namespace Vakansion.Core.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "c20b7c03-733b-40af-8c6a-b1ef6bc93445",
+<<<<<<< Updated upstream:Vakansion/Vakansion.Core/Migrations/20221020121345_Name.Designer.cs
+                            Id = "88c575fc-5f94-49ff-acb2-9fcc9402d481",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "d1996a0d-a936-49e3-a112-174121afe1a4",
+                            ConcurrencyStamp = "e17bb092-b586-493f-8dc1-8b31a56b38eb",
+=======
+                            Id = "76b3fb1f-1201-452e-b1bb-d0d1aac44cad",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "c5205b5d-39eb-4618-9ccc-60d04e010bd5",
+>>>>>>> Stashed changes:Vakansion/Vakansion.Core/Migrations/20221018175144_First.Designer.cs
                             Email = "admin@vacansyukraine.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@VACANSYUKRAINE.COM",
                             NormalizedUserName = "ADMIN@VACANSYUKRAINE.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEDLifz+jkqablWKXKVQFcSjCeDi/im3+V0pAfbpbkpi6DAm71dwybtQ/+iDH8yPD8Q==",
+<<<<<<< Updated upstream:Vakansion/Vakansion.Core/Migrations/20221020121345_Name.Designer.cs
+                            PasswordHash = "AQAAAAEAACcQAAAAEEX0TIFbt3IrXQndzFNtFatcpfdRMA86jd/qXPaeCnUGFILRsBKtkoN31QsphEcgFA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "b6b0ce61-3bb4-4e36-83ff-fd8fe7a20915",
+                            SecurityStamp = "497ef9be-d226-4a8f-9806-d19fc609eb0d",
+=======
+                            PasswordHash = "AQAAAAEAACcQAAAAEE3N2Re+5dQc4tr6rworgNjEFEsa5RCPTjiJMvSbWGuEYRiwfZ1Ed16YHOnIkDHewQ==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "22754281-a0a9-4896-a64f-a58ba77a5410",
+>>>>>>> Stashed changes:Vakansion/Vakansion.Core/Migrations/20221018175144_First.Designer.cs
                             TwoFactorEnabled = false,
                             UserName = "admin@vacansyukraine.com"
                         },
                         new
                         {
-                            Id = "fe56737b-fc92-462e-bd47-97cfd3b1fc8e",
+<<<<<<< Updated upstream:Vakansion/Vakansion.Core/Migrations/20221020121345_Name.Designer.cs
+                            Id = "523a7c7f-773b-4f91-b6ca-ddd3f6ad1e92",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "641fbd9b-3507-4803-ab69-7b3ec37875a2",
+                            ConcurrencyStamp = "7cb0c9b4-9345-4b57-a6d9-10be97ca0fd3",
+=======
+                            Id = "be7003a7-d841-46d4-adfb-92db7ed1ae39",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "0dc5df06-3f9f-4d96-9c37-0270ea66f9f3",
+>>>>>>> Stashed changes:Vakansion/Vakansion.Core/Migrations/20221018175144_First.Designer.cs
                             Email = "user@vacansyukraine.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "USER@VACANSYUKRAINE.COM",
                             NormalizedUserName = "USER@VACANSYUKRAINE.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEJyf0sFtcGGWSRjW26np5wwqFHn7m/PKdQ1g9j3UgeazHaTU5itER1ZZw3P5N3uubg==",
+<<<<<<< Updated upstream:Vakansion/Vakansion.Core/Migrations/20221020121345_Name.Designer.cs
+                            PasswordHash = "AQAAAAEAACcQAAAAECyWYP+qwdHUY+hLxb/ilyuLtAw+Hd422ogoMkDnPVMuczUHmJE4+CUhBvFVb2WEzQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "71c42ca3-674b-4f68-9e67-4927002bd13a",
+                            SecurityStamp = "e3829778-303c-4308-a595-f63f337d73b8",
+=======
+                            PasswordHash = "AQAAAAEAACcQAAAAEKsLm+LPJfP1sOuJ1mbke4qJWfSSBksIGxTS5ZMwXiFKGjB9Ix/POCOnXDoxmIGLoA==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "0cf71d8a-621b-4fd1-a9fd-8ec18391e9d5",
+>>>>>>> Stashed changes:Vakansion/Vakansion.Core/Migrations/20221018175144_First.Designer.cs
                             TwoFactorEnabled = false,
                             UserName = "user@vacansyukraine.com"
                         });
