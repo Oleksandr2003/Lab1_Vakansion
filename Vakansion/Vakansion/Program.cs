@@ -28,6 +28,11 @@ builder.Services.AddControllers().AddJsonOptions(x =>
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddTransient<UsersRepository>();
+builder.Services.AddTransient<DataRepository>();
+builder.Services.AddTransient<EducationRepository>();
+builder.Services.AddTransient<EmployerRepository>();
+builder.Services.AddTransient<PositionRepository>();
+builder.Services.AddTransient<UnemployedRepository>();
 
 var app = builder.Build();
 

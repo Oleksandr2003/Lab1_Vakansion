@@ -17,7 +17,7 @@ namespace Vacancy.Repository.Repositories
             _ctx = ctx;
         }
 
-        public async Task<IEnumerable<UnemployedReadDto>> GetVehicleModelsAsync()
+        public async Task<IEnumerable<UnemployedReadDto>> GetUnemployedAsync()
         {
             var unemployedDto = _ctx.Unemployeds
                 .Select(x => new UnemployedReadDto

@@ -17,7 +17,7 @@ namespace Vacancy.Repository.Repositories
             _ctx = ctx;
         }
 
-        public async Task<IEnumerable<PositionReadDto>> GetBodyTypesAsync()
+        public async Task<IEnumerable<PositionReadDto>> GetPositiinAsync()
         {
 
             var positionDto = _ctx.Positions.
