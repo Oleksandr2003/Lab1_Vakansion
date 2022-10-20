@@ -1,0 +1,43 @@
+﻿@using Vacancy.Repository.Dto.VacancyDto
+@model IEnumerable<VacancyReadDto>
+
+@{
+}
+
+
+
+
+<div class="float-end">
+    <a href="/days/create" class="btn btn-outline-primary">Додати вакансію</a>
+</div>
+
+
+<h1>Вакансії</h1>
+<hr />
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+           
+            <th>Вакансія</th>
+            <th>Посада</th>
+               <th>Роботодавець</th>
+                  <th> Безробітній</th>
+                    
+            
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var u in Model)
+        {
+            <tr>
+                 <td>@u.VacancyId </td>
+                 <td>@u.PositionId  </td>
+                
+                   <td>@u.EmployerId</td>
+                  <td> @u.UnemployedId </td>
+                                                                      
+            </tr>
+        }
+    </tbody>
+</table>

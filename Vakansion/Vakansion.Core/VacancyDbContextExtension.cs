@@ -74,6 +74,32 @@ namespace Vakansion.Core
                     RoleId = USER_ROLE_ID,
                     UserId = USER_ID
                 });
+
+           /* builder.Entity<Position>().HasData(
+              new Position
+              {
+                  ClassId = 1,
+                  ClassName = "Програміст",                
+              },
+                 new Position
+                 {
+                     ClassId = 2,
+                     ClassName = "Токар",
+                 }
+              );
+            builder.Entity<Vacancys>().HasData(
+             new Vacancys
+             {
+              VacancysId = 1,
+              PositionId = 1
+             },
+             new Vacancys
+             {
+                 VacancysId = 2,
+                 PositionId = 2
+             }
+
+             );*/
         }
     }
 }

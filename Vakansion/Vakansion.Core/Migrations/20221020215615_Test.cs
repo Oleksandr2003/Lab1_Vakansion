@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Vakansion.Core.Migrations
 {
-    public partial class First : Migration
+    public partial class Test : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -285,8 +285,8 @@ namespace Vakansion.Core.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "0afe914a-52e3-46f0-a049-3d0071a0b656", "6ebaa118-4668-4278-9440-c19c641badb5", "Admin", "ADMIN" },
-                    { "5c064ad0-413e-433c-871d-ae492b8d4648", "96382874-482b-4df4-b7fc-c532cc4adf2c", "User", "USER" }
+                    { "acbdaeec-510a-49e6-b4fc-be4cd8f218f0", "1d2ee222-41e1-4a89-9dba-f419ef3ad9bf", "User", "USER" },
+                    { "bc2ab886-7c1c-4fd4-b0c0-971b769050bb", "ce22ee7d-48bc-470e-9f90-aedcc5f9c6c7", "Admin", "ADMIN" }
                 });
 
             migrationBuilder.InsertData(
@@ -294,24 +294,24 @@ namespace Vakansion.Core.Migrations
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "FirstName", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { "1e6e032d-c256-47fe-81cb-7d6fd8504e2a", 0, "e571faee-dafa-4c1f-9146-64de2f30a6e7", "user@vacansyukraine.com", true, null, null, false, null, "USER@VACANSYUKRAINE.COM", "USER@VACANSYUKRAINE.COM", "AQAAAAEAACcQAAAAEO1xedQOtegZSx6aWk3SIVysZWqXrhtVdNFUegM9OjFKF7TMPi+GOTF9SI+i7wverw==", null, false, "b97ce857-39df-4590-97cd-185d3e92aa70", false, "user@vacansyukraine.com" },
-                    { "5787bd20-bdc8-4874-a8d4-bea65bb991e2", 0, "3f17418a-7ccc-47cc-a6bc-7b07e1d58148", "admin@vacansyukraine.com", true, null, null, false, null, "ADMIN@VACANSYUKRAINE.COM", "ADMIN@VACANSYUKRAINE.COM", "AQAAAAEAACcQAAAAEDtZFXy4ipomnXaImYyYA4W46qggm95TPS6kI3YhlzYp+48APUPLdqf9QEx3iFFFCw==", null, false, "45148f66-cd7e-4dea-9767-66ebfb35d7b2", false, "admin@vacansyukraine.com" }
+                    { "1b384ed7-c658-4085-9b7d-c211966ee7b8", 0, "59137cd2-2f65-404f-92e0-08289cc8f629", "user@vacansyukraine.com", true, null, null, false, null, "USER@VACANSYUKRAINE.COM", "USER@VACANSYUKRAINE.COM", "AQAAAAEAACcQAAAAEP9n92r9TS0oo6/tJ7WEQ0jttHPgbMM6kirA1KUQmJ9yGZNe/L2YokS6P7BEOo/nJw==", null, false, "224d1a5b-578c-4465-b112-cfe4dde1b761", false, "user@vacansyukraine.com" },
+                    { "7c254c7a-1c00-49b5-bb86-2c0f27421f1f", 0, "3f687d2d-d40b-45f2-afc8-9fdd7490a96f", "admin@vacansyukraine.com", true, null, null, false, null, "ADMIN@VACANSYUKRAINE.COM", "ADMIN@VACANSYUKRAINE.COM", "AQAAAAEAACcQAAAAEM/cdTiG6hBTkjq7a3JeCCxnZT9IVu7VOVaITvGMI7+r7+RNie2/kSlHGYM3Kn/P6A==", null, false, "878086ab-4fc7-40f2-8445-768312ab5576", false, "admin@vacansyukraine.com" }
                 });
 
             migrationBuilder.InsertData(
                 table: "AspNetUserRoles",
                 columns: new[] { "RoleId", "UserId" },
-                values: new object[] { "0afe914a-52e3-46f0-a049-3d0071a0b656", "1e6e032d-c256-47fe-81cb-7d6fd8504e2a" });
+                values: new object[] { "acbdaeec-510a-49e6-b4fc-be4cd8f218f0", "1b384ed7-c658-4085-9b7d-c211966ee7b8" });
 
             migrationBuilder.InsertData(
                 table: "AspNetUserRoles",
                 columns: new[] { "RoleId", "UserId" },
-                values: new object[] { "5c064ad0-413e-433c-871d-ae492b8d4648", "1e6e032d-c256-47fe-81cb-7d6fd8504e2a" });
+                values: new object[] { "bc2ab886-7c1c-4fd4-b0c0-971b769050bb", "1b384ed7-c658-4085-9b7d-c211966ee7b8" });
 
             migrationBuilder.InsertData(
                 table: "AspNetUserRoles",
                 columns: new[] { "RoleId", "UserId" },
-                values: new object[] { "0afe914a-52e3-46f0-a049-3d0071a0b656", "5787bd20-bdc8-4874-a8d4-bea65bb991e2" });
+                values: new object[] { "bc2ab886-7c1c-4fd4-b0c0-971b769050bb", "7c254c7a-1c00-49b5-bb86-2c0f27421f1f" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
