@@ -5,9 +5,7 @@ using Vacancy.Repository.Dto.UserDto;
 
 namespace Vacancy.Repository.Repositories
 {
-    public class UserRepository
-    {
-        public class UsersRepository
+         public class UsersRepository
         {
             private readonly VacancyContext _ctx;
             private readonly UserManager<User> _userManager;
@@ -139,5 +137,4 @@ namespace Vacancy.Repository.Repositories
                 }
             }
         }
-    }
 }
