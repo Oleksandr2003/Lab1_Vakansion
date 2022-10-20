@@ -33,6 +33,7 @@ builder.Services.AddTransient<EducationRepository>();
 builder.Services.AddTransient<EmployerRepository>();
 builder.Services.AddTransient<PositionRepository>();
 builder.Services.AddTransient<UnemployedRepository>();
+builder.Services.AddTransient<VacancyRepository>();
 
 var app = builder.Build();
 
